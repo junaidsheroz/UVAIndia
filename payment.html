@@ -9,7 +9,25 @@
     
 </head>
 <body>
-
+    <div class="col-lg-6 col-12">
+        <form id="contactform" action="./contact/contact-process.php" method="post" class="form-git2 form-submit">
+            <h3 class="title text-center">Contact Us</h3>
+            <div class="text-wrap">
+                <div class="has-icon position-relative">
+                    <input type="text" name="firstname" id="firstname" value="" class="firstname" placeholder="Name here">
+                    <span class="icon-user"></span>
+                </div>
+                <div class="has-icon position-relative">
+                    <input type="text" name="email" id="email" value="" class="email" placeholder="Email here">
+                    <span class="fa fa-envelope" aria-hidden="true"></span>
+                </div>
+                <textarea name="message" id="comment-message" rows="8" placeholder="Message here" required="required"></textarea>
+            </div>
+            <div class="flat-send-message btn-linear hv-linear-gradient">
+                <button name="submit" type="submit" class="submit font-style linear-color border-corner" id="submit">send message now</button>
+            </div>
+        </form>
+    </div>
 
 
     <script src="javascript/jquery.min.js"></script>
